@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
+   <top>
+        <MenuBar prefWidth="Infinity" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu id="file_menu" mnemonicParsing="false" text="Archivo">
+                    <items>
+                        <MenuItem id="properties_menu_item" mnemonicParsing="false" text="Propiedades" />
+                        <MenuItem id="exit_menu_item" mnemonicParsing="false" onAction="#closeApplication" text="Salir" />
+                    </items>
+                </Menu>
+                <Menu id="lessor_menu" mnemonicParsing="false" text="Gestión Inquilinos">
+                    <items>
+                        <MenuItem id="new_lessor_menu_item" mnemonicParsing="false" onAction="#openNewLessorWindow" text="Nuevo Inquilino" />
+                    </items>
+                </Menu>
+                <Menu id="estate_menu" mnemonicParsing="false" text="Gestión Inmuebles">
+                    <items>
+                        <MenuItem id="new_estate_menu_item" mnemonicParsing="false" text="Nuevo Inmueble" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+   </top>
+</BorderPane>
